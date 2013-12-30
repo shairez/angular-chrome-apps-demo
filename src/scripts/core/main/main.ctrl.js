@@ -66,7 +66,7 @@ angular.module('notepad')
 						$scope.loadMyPic = false;
 
 						$scope.toggleJarvis();
-						$scope.text = "<html><body></body></html>"
+						$scope.text = "<html>\n<body>\nHello World!\n</body>\n</html>"
 					break;
 
 				}
