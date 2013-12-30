@@ -1,0 +1,28 @@
+
+<div class="row">
+    <div class="col-md-12">
+        <button type="button" class="btn btn-default" ng-click="loadFile()">Load</button>
+        <button type="button" class="btn btn-default" ng-click="saveToDrive()">Save To Drive</button>
+        <button type="button" class="btn btn-default" ng-click="loadText()">Load From Drive</button>
+        <button type="button" class="btn btn-default" ng-click="bePolite()">I'm Lazy</button>
+        <button type="button" class="btn btn-default" ng-click="toggleJarvis()">Jarvis mode {{jarvisModeOff}}</button>
+    </div>
+</div>
+
+<br/>
+<div class="row well well-sm" ng-show="syncMessage">
+    <p class="text-success">{{syncMessage}}</p>
+</div>
+
+
+<input type="text" x-webkit-speech ng-model="jarvisText" ng-show="jarvisMode"/>
+
+<div class="row" ng-hide="jarvisMode">
+        <textarea class="mainTextArea" ng-model="text"></textarea>
+
+    <!--<div contenteditable ng-model="text"></div>-->
+</div>
+
+<img src="assets/images/me.jpg" width="400" ng-show="loadMyPic"/>
+<img src="assets/images/me_pretty.jpg" width="400" ng-show="makeMePretty"/>
+
