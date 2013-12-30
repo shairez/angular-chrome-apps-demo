@@ -1,2 +1,2 @@
-ui-router-intro-demo
+Angular Chrome Apps Demo App
 ====================
